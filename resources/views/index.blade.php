@@ -14,19 +14,19 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-success" href="#">
+                        <a class="nav-link text-success" href="http://stollmanagement.test/report">
                             <span data-feather="file"></span>
-                            Orders
+                            Reports
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-success" href="#">
+                        <a class="nav-link text-success" href="http://stollmanagement.test/employee">
                             <span data-feather="users"></span>
                             Employees
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-success" href="#">
+                        <a class="nav-link text-success" href="http://stollmanagement.test/customer">
                             <span data-feather="users"></span>
                             Customers
                         </a>

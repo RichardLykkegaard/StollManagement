@@ -18,6 +18,15 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('pages.login');
 });
+Route::get('/customer', function () {
+    return view('pages.customer');
+});
+Route::get('/employee', function () {
+    return view('pages.employee');
+});
+Route::get('/report', function () {
+    return view('pages.report');
+});
 /*
 Route::get('/', function () {
     return view('index');
