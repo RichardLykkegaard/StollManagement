@@ -1,43 +1,14 @@
-<!------ Include the above in your HEAD tag ---------->
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-
-    <!-- Website CSS style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <!-- Bootstrap core CSS -->
-    <link href="{{asset('css/app.css')}}" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
-
-    <!-- Website Font style -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
-    <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-
-    <title>Admin</title>
-</head>
-<link href="{{asset('css/custom.css')}}" rel="stylesheet">
+@include('includes.header')
 @include('includes.navbar')
-<div class="container-center">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-6">
             <div class="panel-heading">
                 <div class="panel-title text-center">
                     <h1 class="title">SS Company</h1>
                     <hr />
                 </div>
             </div>
-            <div class="main-login main-center">
                 <form class="form-horizontal" method="post" action="#">
 
                     <div class="form-group">
@@ -97,8 +68,7 @@
                         <a href="index.php">Login</a>
                     </div>
                 </form>
-            </div>
+
         </div>
     </div>
-</div>
-@include('includes.footer')
+    @include('includes.footer')
