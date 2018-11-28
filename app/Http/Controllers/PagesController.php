@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    public function home(){
-        return 'HOME';
+    public function index(){
+        return 'Index';
     }
 }
