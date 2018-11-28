@@ -9,4 +9,8 @@ class PagesController extends Controller
     public function index(){
         return 'Index';
     }
+
+    public function login(){
+        return 'login';
+    }
 }
