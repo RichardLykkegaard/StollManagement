@@ -146,7 +146,7 @@
         data: {
             labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
             datasets: [{
-                data: [11339, 14345, 18483, 21003, 23489, 25092, 32034],
+                data: [11339, 24345, 18483, 11003, 23489, 25092, 32034],
                 lineTension: 0,
                 backgroundColor: 'transparent',
                 borderColor: '#2F4F4F',
