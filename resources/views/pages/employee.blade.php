@@ -20,16 +20,17 @@
 
             <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
-            <h2>Section title</h2>
+            <h2>Profile Information</h2>
             <div class="table-responsive">
                 <table class="table table-striped table-sm">
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Header</th>
-                            <th>Header</th>
-                            <th>Header</th>
-                            <th>Header</th>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Salary</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -149,8 +150,7 @@
                 </table>
             </div>
         </main>
-    </div>
-</div>
+
 <!-- Graphs -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 <script>
