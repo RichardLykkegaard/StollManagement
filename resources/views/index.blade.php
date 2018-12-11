@@ -103,7 +103,7 @@
                         </tr>
                         <tr>
                             <td>02</td>
-                            <td>Anders la Cour</td>
+                            <td><a href="index.php" class="text-success">Anders la Cour</a></td>
                             <td>Developer</td>
                             <td>#</td>
                             <td>Active</td>
@@ -126,7 +126,7 @@
                     <tbody>
                         <tr>
                             <td>01</td>
-                            <td>Sebastian Stoll</td>
+                            <td><a href="index.php" class="text-success">Sebastian Stoll</a></td>
                             <td>Customer</td>
                             <td>contact@sebastianstoll.com</td>
                             <td>Active</td>

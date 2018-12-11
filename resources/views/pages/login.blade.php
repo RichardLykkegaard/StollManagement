@@ -10,7 +10,6 @@
                 </div>
             </div>
                 <form class="form-horizontal" method="post" action="#">
-
                     <div class="form-group">
                         <label for="name" class="cols-sm-2 control-label">Your Name</label>
                         <div class="cols-sm-10">
@@ -20,7 +19,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="form-group">
                         <label for="email" class="cols-sm-2 control-label">Your Email</label>
                         <div class="cols-sm-10">
@@ -65,7 +63,7 @@
                         <button type="button" class="btn btn-primary btn-lg btn-block login-button">Register</button>
                     </div>
                     <div class="login-register">
-                        <a href="index.php">Login</a>
+                        <a href="index.php" class="text-success">Login</a>
                     </div>
                 </form>
 
