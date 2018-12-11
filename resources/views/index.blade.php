@@ -96,7 +96,7 @@
                     <tbody>
                         <tr>
                             <td>01</td>
-                            <td>Richard Lykkegaard</td>
+                            <td><a href="index.php" class="text-success">Richard Lykkegaard</a></td>
                             <td>Developer</td>
                             <td>lykkegaardrichard@gmail.com</td>
                             <td>Active</td>
