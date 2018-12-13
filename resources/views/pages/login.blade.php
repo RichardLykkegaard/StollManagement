@@ -3,13 +3,12 @@
 
 <?php
 
-    if (isset($_POST['username'])){
-    echo 'Testing: ok';
+    if (isset($_POST['username'])&&isset($_POST['password'])){
+    echo 'Testing: Log in';
     }
     else{
-    echo 'Testing: username not set yet';
+    echo 'Testing: Please enter correct username and password';
     }
-//virker åbentbart ikke :i.. brugte begge guides..
 ?>
 
 <div class="container-fluid">
@@ -22,33 +21,29 @@
                 </div>
             </div>
 
-            <form class="form-horizontal" method="post" action="#">
-
-                <div class="form-group">
-                    <label for="username" class="cols-sm-2 control-label">Username:</label>
-                    <div class="cols-sm-10">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                            <input type="text" class="form-control" name="username" id="username" placeholder="Enter your Username" />
-                        </div>
+            <form class="form-horizontal" method="POST" action="#">
+                <!-- Username input field -->
+                <label for="username" class="cols-sm-2 control-label">Username:</label>
+                <div class="cols-sm-10">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Enter your Username" />
                     </div>
                 </div>
-
-                <div class="form-group">
-                    <label for="password" class="cols-sm-2 control-label">Password:</label>
-                    <div class="cols-sm-10">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Enter your Password" />
-                        </div>
+                <!-- password input field -->
+                <label for="password" class="cols-sm-2 control-label">Password:</label>
+                <div class="cols-sm-10">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Enter your Password" />
                     </div>
                 </div>
-
-                <div class="form-group ">
-                    <button type="button" class="btn btn-primary btn-lg btn-block login-button">Login</button>
-                </div>
+                <!-- Login button -->
+                <button class="btn btn-primary btn-lg btn-block login-button" type="submit">Login</button>
             </form>
-
+            <!-- OLD login bttn 
+                <button type="button" class="btn btn-primary btn-lg btn-block login-button">Login</button>
+-->
         </div>
     </div>
     @include('includes.footer')
