@@ -27,6 +27,9 @@ Route::get('/employee', function () {
 Route::get('/report', function () {
     return view('pages.report');
 });
+Route::get('/playspace', function () {
+    return view('pages.playspace');
+});
 /*
 Route::get('/', function () {
     return view('index');
