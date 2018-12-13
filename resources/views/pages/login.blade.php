@@ -21,7 +21,7 @@
                 </div>
             </div>
 
-            <form class="form-horizontal" method="POST" action="#">
+            <form class="form-horizontal" method="POST" action="login">
                 <!-- Username input field -->
                 <label for="username" class="cols-sm-2 control-label">Username:</label>
                 <div class="cols-sm-10">
