@@ -2,20 +2,33 @@
 @include('includes.navbar')
 
 <?php
-//Checks for cookie:
-
-//checks if user have typed in and submitted login information:
+    //checks if user have typed in and submitted login information:
     if (isset($_GET['username'])&&isset($_GET['password'])){
-    //Login information is submitted -> Check if correct information:
-        echo $_GET['username'];
-        //information correct: Sets login cookie
-      //  setcookie('loginCookie',(varchar)$test,time()+60);
-        
-        //echo $_COOKIE['loginCookie'];
-    }
-    else{
-    //Login information not submitted:
-        
+        //Login information is submitted -> Set local variables
+        $username = $_GET['username'];
+        $password = $_GET['password'];
+        //Checks if variables are empty
+        if(!empty($username)&&!empty($password))
+        {
+            //variables arent empty -> Check if user fit database
+            //if(){
+                //Login information was correct -> sets cookie for an hour
+                setcookie('loginCookie',$username,time()+3600);
+                //User is now logged in and sends him to index page
+                header('Location: http://127.0.0.1:8000/welcome/');
+                exit;
+            //}
+            //else
+            //{
+                //login information was incorrect -> tells user
+            //  echo 'Username and password are incorrect or does not exist'    
+            //}
+        }
+        else
+        {
+            //variables are empty -> inform user
+            echo 'Please type in your username and password and try again.';
+        }
     }
 ?>
 

@@ -18,9 +18,6 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('pages.login');
 });
-Route::Post('/login', function () {
-    return 'input recieved';
-});
 Route::get('/customer', function () {
     return view('pages.customer');
 });
@@ -30,8 +27,8 @@ Route::get('/employee', function () {
 Route::get('/report', function () {
     return view('pages.report');
 });
-Route::get('/playspace', function () {
-    return view('pages.playspace');
+Route::get('/welcome', function () {
+    return view('pages.welcome');
 });
 /*
 Route::get('/', function () {
