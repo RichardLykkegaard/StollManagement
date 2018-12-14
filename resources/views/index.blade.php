@@ -10,7 +10,7 @@
                     <li class="nav-item">
                         <a class="nav-link active text-muted" href="#">
                             <span data-feather="home"></span>
-                            Dashboard <span class="sr-only">(current)</span>
+                            Menu <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -65,20 +65,57 @@
         </nav>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <h1 class="h2 text-success"><b>Revenue</b></h1>
+         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2 text-success"><b>Finans</b></h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
-                    <div class="btn-group mr-2">
-                        <button class="btn btn-sm btn-outline-secondary">Share</button>
-                        <button class="btn btn-sm btn-outline-secondary">Export</button>
-                    </div>
                     <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
                         <span data-feather="calendar"></span>
-                        This week
+                        Year
                     </button>
                 </div>
+            </div> 
+            <div class="table-responsive">
+                <table class="table table-striped table-sm">
+                    <thead>
+                        <tr>
+                            <th>Dato</th>
+                            <th>Fra</th>
+                            <th>Til</th>
+                            <th>Timer u. tillæg</th>
+                            <th>Timer m. tillæg</th> 
+                            <th>Timer i alt</th>
+                            <br>
+                            <th>Købte timer</th>
+                            <th>Dato</th>
+                            <th>Faktura nr.</th>
+                            <th>Betalt(Ja/Nej)</th>
+                            <th>Status</th>
+                            <th>Priser</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- Dato -->
+                            <td>14-Dec</td>
+                            <!-- Fra -->
+                            <td>8:00</td>
+                            <!-- Til -->
+                            <td>16:00</td>
+                            <!--Timer u. tillæg-->
+                            <td>#</td>
+                            <!-- # -->
+                            <td>#</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td>#</td>
+                            <td>#</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-
             <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
             <h2>Staff</h2>
@@ -134,17 +171,19 @@
                     </tbody>
                 </table>
             </div>
-        </main>
+        </main> 
     </div>
 </div>
 <!-- Graphs -->
+
+<!--
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 <script>
     var ctx = document.getElementById("myChart");
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
             datasets: [{
                 data: [11339, 24345, 18483, 11003, 23489, 25092, 32034],
                 lineTension: 0,
@@ -169,4 +208,5 @@
     });
 
 </script>
+-->
 @include('includes.footer')
