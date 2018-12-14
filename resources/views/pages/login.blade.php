@@ -3,7 +3,7 @@
 
 <?php
 
-    if (isset($_POST['username'])&&isset($_POST['password'])){
+    if (isset($_GET['username'])&&isset($_GET['password'])){
     echo 'Testing: Log in';
     }
     else{
@@ -21,7 +21,7 @@
                 </div>
             </div>
 
-            <form class="form-horizontal" method="POST" action="login">
+            <form class="form-horizontal" method="get" action="login">
                 <!-- Username input field -->
                 <label for="username" class="cols-sm-2 control-label">Username:</label>
                 <div class="cols-sm-10">

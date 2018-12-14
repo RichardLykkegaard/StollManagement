@@ -19,7 +19,7 @@ Route::get('/login', function () {
     return view('pages.login');
 });
 Route::Post('/login', function () {
-    return view('pages.login');
+    return 'input recieved';
 });
 Route::get('/customer', function () {
     return view('pages.customer');
