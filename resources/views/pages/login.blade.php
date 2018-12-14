@@ -2,12 +2,20 @@
 @include('includes.navbar')
 
 <?php
+//Checks for cookie:
 
+//checks if user have typed in and submitted login information:
     if (isset($_GET['username'])&&isset($_GET['password'])){
-    echo 'Testing: Log in';
+    //Login information is submitted -> Check if correct information:
+        echo $_GET['username'];
+        //information correct: Sets login cookie
+      //  setcookie('loginCookie',(varchar)$test,time()+60);
+        
+        //echo $_COOKIE['loginCookie'];
     }
     else{
-    echo 'Testing: Please enter correct username and password';
+    //Login information not submitted:
+        
     }
 ?>
 
