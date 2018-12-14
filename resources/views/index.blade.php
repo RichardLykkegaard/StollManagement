@@ -104,15 +104,26 @@
                             <!--Timer u. tillæg-->
                             <td>#</td>
                             <!-- # -->
+                            <td>#</td>
+                            <!-- # -->
+                            <td>#</td>
+                            <!-- # -->
+                            <td>#</td>
+                            <!-- # -->
+                            <td>#</td>
+                            <!-- # -->
+                            <td>#</td>
+                            <!-- # -->
                             <td><div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Vælg
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Ja</a>
-        <a class="dropdown-item" href="#">Nej</a>
-      </div>
-        </div></td>
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Vælg
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Ja</a>
+    <a class="dropdown-item" href="#">Nej</a>
+
+  </div>
+</div></td>
                         </tr>
                         <tr>
                             <td>02</td>
