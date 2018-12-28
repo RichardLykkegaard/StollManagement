@@ -31,7 +31,7 @@
         }
     }
 ?>
-<div class="jumbotron d-flex align-items-center">
+
     <div class="container">
         <div class="card align-items-center">
           <img class="card-img-top" src="https://via.placeholder.com/1980x1080?text=stollmanagement" alt="Card image cap">
@@ -77,5 +77,5 @@
                 
                  <a href="http://stollmanagement.test/"><button type="button" class="btn btn-success">Back</button></a>
     </div>
-</div>
+
     @include('includes.footer')
