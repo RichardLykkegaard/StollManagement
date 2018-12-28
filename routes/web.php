@@ -11,26 +11,9 @@
 |
 */
 
-//Route::get('/','PagesController@index');
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/login', function () {
-    return view('pages.login');
-});
-Route::get('/customer', function () {
-    return view('pages.customer');
-});
-Route::get('/employee', function () {
-    return view('pages.employee');
-});
-Route::get('/report', function () {
-    return view('pages.report');
-});
-/*
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/index','PagesController@index');
-*/
+//Uses PagesController to route around the system
+Route::get('/','PagesController@index');
+Route::get('/login','PagesController@login');
+Route::get('/customer','PagesController@customer');
+Route::get('/employee','PagesController@employee');
+Route::get('/report','PagesController@report');

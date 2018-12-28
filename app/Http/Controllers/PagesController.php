@@ -6,23 +6,29 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+    //Lists all routes
     public function index(){
-        return 'Index';
+        //Returns view
+        return view('index');
     }
 
     public function login(){
-        return 'login';
+        //Returns view
+        return view('pages.login');
     }
 
     public function customer(){
-        return 'customer';
+        //Returns view
+        return view('pages.customer');
     }
 
     public function employee(){
-        return 'employee';
+        //Returns view
+        return view('pages.employee');
     }
 
     public function report(){
-        return 'report';
+        //Returns view
+        return view('pages.report');
     }
 }
