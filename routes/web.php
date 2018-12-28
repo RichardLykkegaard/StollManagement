@@ -27,9 +27,6 @@ Route::get('/employee', function () {
 Route::get('/report', function () {
     return view('pages.report');
 });
-Route::get('/welcome', function () {
-    return view('pages.welcome');
-});
 /*
 Route::get('/', function () {
     return view('index');
