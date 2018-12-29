@@ -1,7 +1,12 @@
 @include('includes.header')
-
 @include('includes.navbar')
 
+<!--Secures only logged in users can acces the system -->
+@guest
+ <!-- if guest -->
+ @include('includes.loginInclude')
+@else
+<!-- if logged in -->
 <div class="container-fluid">
     <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
@@ -229,3 +234,5 @@
 </script>
 -->
 @include('includes.footer')
+
+@endguest

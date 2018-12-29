@@ -9,14 +9,9 @@ class PagesController extends Controller
     //Lists all routes
     public function index(){
         //Returns view
-        return view('index');
+        return view('pages.index');
     }
-
-    public function login(){
-        //Returns view
-        return view('pages.login');
-    }
-
+    
     public function customer(){
         //Returns view
         return view('pages.customer');
@@ -30,5 +25,10 @@ class PagesController extends Controller
     public function report(){
         //Returns view
         return view('pages.report');
+    }
+
+    public function main(){
+        //Returns view
+        return view('pages.main');
     }
 }

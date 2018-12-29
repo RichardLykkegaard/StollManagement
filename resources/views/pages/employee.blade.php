@@ -1,6 +1,12 @@
 @include('includes.header')
-
 @include('includes.navbar')
+
+<!--Secures only logged in users can acces the system -->
+@guest
+ <!-- if guest -->
+ @include('includes.loginInclude')
+@else
+<!-- if logged in -->
 <h1>employee page</h1>
 
  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
@@ -184,3 +190,5 @@
 
 </script>
 @include('includes.footer')
+
+@endguest

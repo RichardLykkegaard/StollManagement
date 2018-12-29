@@ -13,7 +13,9 @@
 
 //Uses PagesController to route around the system
 Route::get('/','PagesController@index');
-Route::get('/login','PagesController@login');
 Route::get('/customer','PagesController@customer');
 Route::get('/employee','PagesController@employee');
 Route::get('/report','PagesController@report');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
