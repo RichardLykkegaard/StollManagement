@@ -105,17 +105,17 @@
                             <!-- Til -->
                             <td>16:00</td>
                             <!--Timer u. tillæg-->
-                            <td>#</td>
+                            <td>0.75</td>
                             <!-- # -->
-                            <td>#</td>
+                            <td>0</td>
                             <!-- # -->
-                            <td>#</td>
+                            <td>0.75t</td>
                             <!-- # -->
-                            <td>#</td>
+                            <td>10</td>
                             <!-- # -->
-                            <td>#</td>
+                            <td>10-Oct</td>
                             <!-- # -->
-                            <td>#</td>
+                            <td>400</td>
                             <!-- # -->
                             <td><div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -129,11 +129,25 @@
 </div></td>
                         </tr>
                         <tr>
-                            <td>02</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
+                            <td>10-Jan</td>
+                            <td>8:00</td>
+                            <td>16:00</td>
+                            <td>1.45</td>
+                            <td>0</td>
+                            <td>1.45t</td>
+                            <td>10</td>
+                            <td>10-Jan</td>
+                            <td>442</td>
+                            <td><div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Vælg
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Ja</a>
+    <a class="dropdown-item" href="#">Nej</a>
+
+  </div>
+</div></td>
                         </tr>
                     </tbody>
                 </table>
